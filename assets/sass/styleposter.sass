@@ -1,0 +1,28 @@
+$colors: #3498db, #e74c3c, #2ecc71, #f39c12, #9b59b6, #1abc9c, #e67e22, #27ae60, #d35400, #8e44ad;
+
+.background 
+    position: fixed
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    z-index: -1
+    transition: background 1s ease-in-out
+
+
+@keyframes changeBackground 
+    0% {
+        background: linear-gradient(to right, nth($colors, 1), nth($colors, 2))
+    }
+    25% {
+        background: linear-gradient(to right, nth($colors, 3), nth($colors, 4))
+    }
+    50% {
+        background: linear-gradient(to right, nth($colors, 5), nth($colors, 6))
+    }
+    75% {
+        background: linear-gradient(to right, nth($colors, 7), nth($colors, 8))
+    }
+    100% {
+        background: linear-gradient(to right, nth($colors, 9), nth($colors, 10))
+    }
