@@ -1,28 +1,42 @@
-$colors: #3498db, #e74c3c, #2ecc71, #f39c12, #9b59b6, #1abc9c, #e67e22, #27ae60, #d35400, #8e44ad;
 
-.background 
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+::-webkit-scrollbar
+    width: 12px
+    height: 9px
+::-webkit-scrollbar-thumb
+    background-color: #9ec8f8
+
+body 
+    background: #fcd115
+    overscroll-behavior: none
+
+.logoESD
+    position: absolute
+    top: 0px
+    z-index: 2000
+
+
+.container
+    position: absolute
+    top: 600px
+    left:  1300px
+    z-index: 10000
+    
+
+h1
+    position:  fixed
+    color: #ffffff
+
+.glassy-overlay 
     position: fixed
     top: 0
     left: 0
-    width: 100vw
-    height: 100vh
-    z-index: -1
-    transition: background 1s ease-in-out
-
-
-@keyframes changeBackground 
-    0% {
-        background: linear-gradient(to right, nth($colors, 1), nth($colors, 2))
-    }
-    25% {
-        background: linear-gradient(to right, nth($colors, 3), nth($colors, 4))
-    }
-    50% {
-        background: linear-gradient(to right, nth($colors, 5), nth($colors, 6))
-    }
-    75% {
-        background: linear-gradient(to right, nth($colors, 7), nth($colors, 8))
-    }
-    100% {
-        background: linear-gradient(to right, nth($colors, 9), nth($colors, 10))
-    }
+    width: 100%
+    height: 100%
+    background: rgba(74, 131, 218, 0.171)
+    backdrop-filter: blur(50px)
+    pointer-events: none

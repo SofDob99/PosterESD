@@ -26,14 +26,14 @@ window.onload = () => {
                 </li>`;
                 lista.innerHTML += item;
             }
-       });
-     })
-     .then(()=>{
+    });
+})
+    .then(()=>{
         let users = document.querySelectorAll(".project");
         users.forEach((user) => {
             user.addEventListener("click", mostrarDetalle, true)
         })
-     });
+});
 
 }
 
