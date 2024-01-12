@@ -1,0 +1,87 @@
+@import "lib/vars"
+@import "lib/reboot"
+@import "lib/type"
+
+//SCROLLBAR
+::-webkit-scrollbar
+    width: 12px
+    height: 9px
+::-webkit-scrollbar-thumb
+    background-color: #9ec8f8
+
+nav
+    z-index: 30000
+    position: absolute
+    top: 0
+    left: 0
+    background: $degradado
+    display: flex
+    justify-content: space-between
+    width: 100%
+    .logo
+        margin-top: 15px
+        margin-left: 15px
+        width: 100px
+        height: 100px
+    h1
+        font-family: $font_family_base
+
+.space
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    gap: 30px
+
+.work
+    margin-top: 120px
+    margin-bottom: 10px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    h1
+        font-family: $font_family_base
+        margin-bottom: 10px
+    h2
+        font-size: 1.5em
+        margin-top: 2px
+        margin-left: 50px
+        margin-bottom: 20px
+
+.info
+    display: flex
+    flex-direction: column
+    margin-left: 50px
+    h4
+        margin: 0
+
+.descripcion
+    width: 600px
+    margin-left: 50px
+    margin-top: 30px
+
+.autor
+    margin-left: 50px
+    margin-top: 50px
+    h4
+        margin: 0
+    p
+        margin-bottom: 20px
+
+.contenedor
+    aspect-ratio: 16/9
+    width: 1300px
+    position: relative
+    display: flex
+    overflow: scroll
+    scroll-snap-type: x-mandatory
+    margin-bottom: 50px
+    img
+        width: 100%
+        left: 0
+        position: sticky
+        object-fit: cover
+        scroll-snap-align: center
+
+//mediascreen
+
+

@@ -1,48 +1,69 @@
 @import "lib/vars"
 @import "lib/reboot"
 @import "lib/type"
-h1, h2
-   margin: .3em 30px
-h2
-    color: gray
 
+//SCROLLBAR
+::-webkit-scrollbar
+    width: 12px
+    height: 9px
+::-webkit-scrollbar-thumb
+    background-color: #9ec8f8
+
+body
+    height: 100vh
+    width: 100vw
+    margin: 0rem
+    position: relative
+    overflow-x: hidden
+
+nav
+    z-index: 30000
+    position: fixed
+    top: 0
+    left: 0
+    background: $degradado
+    display: flex
+    justify-content: space-between
+    width: 100%
+    .logo
+        margin-top: 15px
+        margin-left: 15px
+        width: 100px
+        height: 100px
+    h1
+        font-family: $font_family_base
 
 main
+    height: 100%
+    margin-top: 140px
+    margin-bottom: 0
     display: flex
-.detail
-    padding: 2em
-    display: grid
-    grid-template-columns: repeat(2, 1fr)
-    grid-gap: 1em
+    h1
+        font-family: $font_family_base
+        margin-left: 37px
+
+#gallery
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    margin-top: 120px
+
+.usuarios
+    list-style: none
+    display: flex
+    flex-direction: row
+    gap: 10px
+
+.project
+    //border: solid thin
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    width: 300px
     img
         width: 100%
-        display: block
+        height: 100%
         object-fit: cover
-        margin-bottom: 1em
-
-#usuarios
-    list-style: none
-    padding: 0
-    margin: 2em
-    border-right: 1px solid #ccc
-    li
-        padding: .5em
-        border-bottom: 1px solid #ccc
-        transition: all .5s ease
-        display: flex
-        align-items: center
-        cursor: pointer
-        &:hover
-            background-color: #fde457
-        img
-            border-radius: 50%
-            border: 1px solid #ccc
-            background-color: white
-            width: 120px
-            height: 120px
-            object-fit: cover
-        span
-            padding: 1em
-
-// fondo degradado 
+    span
+        margin-top: 10px
 
