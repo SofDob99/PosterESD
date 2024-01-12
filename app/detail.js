@@ -27,7 +27,7 @@ window.onload = () => {
             let estructura = `
             <nav>
             <img class="logo" src="assets/imagenes/esd logo.png" alt="">
-            <a href="index.html"><h1>#Poster 03</h1></a>
+            <a href="poster.html"><h1>#Poster 03</h1></a>
         </nav>
         <main class="space">
             <div class="work">

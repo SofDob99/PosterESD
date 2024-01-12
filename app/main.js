@@ -3,7 +3,7 @@ window.onload = () => {
     let gallery = document.querySelector("#gallery");
 
     let mostrarDetalle = (e) => {
-        window.open(`../detalle.html?id=${e.currentTarget.id}`, '_blank');
+        window.open(`../detalle.html?id=${e.currentTarget.id}`, '_self');
     }
 
     var anuario = [];
